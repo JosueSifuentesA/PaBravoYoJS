@@ -291,7 +291,7 @@ a:hover{
     background-color: white;
     border-radius: 10px;
     max-height: 150px;
-    font-size: 0.95em;
+    font-size: 0.85em;
     gap: 5px;
     text-align: center;
     align-self: center;
@@ -309,5 +309,5 @@ a:hover{
 
 .contactUsContainer label{
     color: #3878b8;
-    font-size: 1.0em;
+    font-size: 1em;
 }
