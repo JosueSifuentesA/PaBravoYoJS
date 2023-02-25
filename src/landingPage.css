@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 95px;
+    top: calc(50% - 95px/2 - width);
+    z-index: 1000;
+    background: #48ABF3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo{
+    width: 120px;
+    height: 100%;
+    margin: 0px 10px;
+}
+
+.header_logIn{
+width: 110px;
+height: 39px;
+background: #FFFFFF;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0px 15px;
+padding: 0px 10px;
+border: 2px solid #FFF;
+}
+
+.main{
+    position: relative;
+    top: 90px;
+}
+
+a{
+    user-select: none;
+}
+
+a:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.main_hero{
+    color: white;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.25)), url(assets/portadaprincipal.png);
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.hero_titleContainer{
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.titleContainer_title{
+    text-align: center;
+}
+
+.titleContainer_name{
+    text-align: center;
+    font-size: 36px;
+}
+
+.hero_registrarse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 40px;   
+    background: #3C7EBE;
+    border: 2px solid #3C7EBE;
+    border-radius: 10px;
+}
+
+.information_selectorContainer{
+    width: 100%;
+    background-color: #48ABF3;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 500;
+}
+
+.selectorContainer_img{
+    filter: invert(96%) sepia(100%) saturate(16%) hue-rotate(41deg) brightness(102%) contrast(102%);
+    margin: 0px 25px;
+    width:  45px;
+    height: 45px;
+}
+
+.selectorContainer_img:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.img_welcome{
+    filter: none;
+}
+
+.footer{
+    background-color: #3C3B3B;
+    color: white;
+    padding: 10px;
+    
+}
+
+.footer_infoContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+    gap: 10px;
+}
+
+.infoContainer_logo{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+.infoContainer_title{
+    font-size: 0.8em;
+    text-align: center;
+
+}
+
+.footer_copyright{
+    font-size: 0.8em;
+    text-align: center;
+
+}
+
+.socialMedia_icon{
+    width: 40px;
+    height: 40px;
+    filter: invert(96%) sepia(100%) saturate(16%) hue-rotate(41deg) brightness(102%) contrast(102%);
+}
+
+.infoContainer_information{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap:15px;
+}
+
+.infoContainer_socialMedia{
+    display: flex;
+    gap: 20px;
+}
+
+.information_container{
+    background-color: #d8e1ea;
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.carrousel{
+    display: flex;
+    height: 100%;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.container_module{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 15px;
+    align-items: center;
+    margin: 15px 0px;
+    
+}
+
+.carrousel_h1{
+    padding-top: 20px ;
+    color:#3878b8;
+}
+
+.carrousel_img{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.img_image{
+    height: 80%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.carrousel_btnActive{
+    width: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #48ABF3;
+    color: white;
+}
+
+.carrousel_btnActive:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.module_information{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    margin: 15px 0px;
+    align-items: center;
+}
+
+.information_data{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap:20px;
+}
+
+.data_icon{
+    width: 150px;
+    height: 150px;
+}
+
+.data_mision{
+    border: 2px solid #3878b8;
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.data_vision{
+    border: 2px solid #3878b8;
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.module_contacUsContainer{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 15px;
+    height: 320px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.module_contacUsContainer div{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    max-height: 150px;
+    font-size: 0.95em;
+    gap: 5px;
+    text-align: center;
+    align-self: center;
+    height: 100%;
+}
+
+.module_contacUsContainer div:hover{
+    border: 2px solid #3878b8;
+}
+
+.contactUsContainer img{
+    width: 50px;
+    height: 50px;
+}
+
+.contactUsContainer label{
+    color: #3878b8;
+    font-size: 1.0em;
+}
