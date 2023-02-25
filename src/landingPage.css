@@ -55,7 +55,7 @@ a:hover{
 
 .main_hero{
     color: white;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.25)), url(assets/portadaprincipal.png);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.25)), url(assets/portadaprincipal.jpg);
     width: 100%;
     height: 350px;
     display: flex;
