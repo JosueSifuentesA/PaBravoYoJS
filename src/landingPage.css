@@ -46,6 +46,8 @@ border: 2px solid #FFF;
 
 a{
     user-select: none;
+    text-decoration: none;
+    color: inherit;
 }
 
 a:hover{
