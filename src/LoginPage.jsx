@@ -33,7 +33,7 @@ const LoginPage = () => {
               <img className='close_img' src={iconClose} />
             </div>
             <div className='container_warning'>
-              <img src={iconExclamation} />
+              <img className='warning_img' src={iconExclamation} />
             </div>
             <h1 className='container_message'>Usuario y/o contraseña incorrectos</h1>
           </div>
