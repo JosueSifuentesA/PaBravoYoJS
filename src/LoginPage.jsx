@@ -15,7 +15,7 @@ const LoginPage = () => {
     e.preventDefault()
 
     if (user === 'Josue123' && password === '1234') {
-      navigate('/')
+      navigate('/paginaPrincipal')
       return
     }
     setBadLogin(true)
