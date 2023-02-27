@@ -275,7 +275,7 @@ a:hover{
     width: 100%;
     height: fit-content;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,minmax(100px,140px));
     grid-template-rows: repeat(2,1fr);
     gap: 15px;
     height: 320px;
@@ -293,7 +293,7 @@ a:hover{
     background-color: white;
     border-radius: 10px;
     max-height: 150px;
-    font-size: 0.85em;
+    font-size: 0.75em;
     gap: 5px;
     text-align: center;
     align-self: center;
