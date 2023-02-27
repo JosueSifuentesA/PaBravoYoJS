@@ -1,5 +1,5 @@
 import iconLogo2PaBravo from './assets/logo2.png'
-import { Route, Link, Routes, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import imgIniciarSesion from './assets/iniciarSesion.jpg'
 import iconExclamation from './assets/exclamation.svg'
 import iconClose from './assets/close.svg'

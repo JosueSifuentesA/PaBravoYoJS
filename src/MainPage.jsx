@@ -1,6 +1,6 @@
 import { Footer } from './Footer'
 import iconLogo2PaBravo from './assets/logo2.png'
-import { BrowserRouter, Route, Link, Routes } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import MainPageInformation from './MainPageInformation'
 import './landingPage.css'
 
