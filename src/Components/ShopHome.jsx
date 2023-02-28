@@ -17,51 +17,51 @@ import { useState } from 'react'
 const ITEM_LIST = {
 
   0: {
-    nombre: 'Ceviche',
+    nombre: 'Ceviche clasico',
     thumbnail: null,
-    price: 20,
+    price: 8,
     id: 0
   },
   1: {
-    nombre: 'Arroz con mariscos',
+    nombre: 'Arroz con Mariscos',
     thumbnail: null,
-    price: 30,
+    price: 25,
     id: 1
   },
   2: {
-    nombre: 'Ceviche',
+    nombre: 'Almejas gratinadas',
     thumbnail: null,
-    price: 20,
+    price: 15,
     id: 2
   },
   3: {
-    nombre: 'Ceviche',
+    nombre: 'Langostinos al ajillo',
     thumbnail: null,
     price: 20,
     id: 3
   },
   4: {
-    nombre: 'Ceviche',
+    nombre: 'Langostinos al vapor',
     thumbnail: null,
-    price: 20,
+    price: 25,
     id: 4
   },
   5: {
-    nombre: 'Ceviche',
+    nombre: 'Camarones a la plancha',
     thumbnail: null,
-    price: 20,
+    price: 18,
     id: 5
   },
   6: {
-    nombre: 'Ceviche',
+    nombre: 'Parihuela',
     thumbnail: null,
-    price: 20,
+    price: 12,
     id: 6
   },
   7: {
-    nombre: 'Ceviche',
+    nombre: 'Leche de tigre',
     thumbnail: null,
-    price: 20,
+    price: 5,
     id: 7
   }
 
@@ -82,12 +82,16 @@ const ShopHome = () => {
 
       {shopingModule && (
 
-        <div style={{ zIndex: '10000', position: 'fixed', backgroundColor: 'rgb(0,0,0,0.25)', height: '100%', width: '100%', display: 'flex', justifyContent: 'center' }}>
-          <div style={{ width: '80%', maxWidth: '550px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexFlow: 'column', backgroundColor: 'white', justifySelf: 'center', alignSelf: 'center', padding: '20px', boxSizing: 'border-box', borderRadius: '15px' }}>
-            <img onClick={() => { setShopingModule(false) }} src={iconClose} style={{ width: '5%', height: '5%', alignSelf: 'flex-end' }} />
+        <div className='shopingCartContainer'>
+          <div className='shopingCartContainer_handler'>
+            <img className='handler_img' onClick={() => { setShopingModule(false) }} src={iconClose} />
             <h1>Carrito de compras</h1>
 
-            <table>
+            <table style={{
+              border: '1px solid black',
+              borderCollapse: 'collapse'
+            }}
+            >
               <thead>
                 <tr>
                   <th>Nombre</th>
