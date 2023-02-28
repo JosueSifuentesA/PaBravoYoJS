@@ -1,4 +1,4 @@
-import iconCard2 from './assets/card2.png'
+import iconCard2 from '../assets/card2.png'
 
 const ModuleAboutUs = () => {
   return (

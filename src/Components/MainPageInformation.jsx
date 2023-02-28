@@ -1,7 +1,7 @@
 import './landingPage.css'
-import iconWelcome from './assets/welcome.svg'
-import iconAboutUs from './assets/aboutUs.svg'
-import iconContactUs from './assets/phone.svg'
+import iconWelcome from '../assets/welcome.svg'
+import iconAboutUs from '../assets/aboutUs.svg'
+import iconContactUs from '../assets/phone.svg'
 import ModuleCarrousel from './ModuleCarrousel'
 import ModuleAboutUs from './ModuleAboutUs'
 

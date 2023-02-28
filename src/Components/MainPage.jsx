@@ -1,5 +1,5 @@
 import { Footer } from './Footer'
-import iconLogo2PaBravo from './assets/logo2.png'
+import iconLogo2PaBravo from '../assets/logo2.png'
 import { Link } from 'react-router-dom'
 import MainPageInformation from './MainPageInformation'
 import './landingPage.css'

@@ -1,6 +1,6 @@
-import iconBell from './assets/bell.svg'
-import iconAddress from './assets/address.svg'
-import iconEmail from './assets/email.svg'
+import iconBell from '../assets/bell.svg'
+import iconAddress from '../assets/address.svg'
+import iconEmail from '../assets/email.svg'
 
 const ModuleContactUs = () => {
   return (

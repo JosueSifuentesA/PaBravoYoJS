@@ -1,9 +1,9 @@
 import './landingPage.css'
-import iconLogoPaBravo from './assets/PaBravoYo.png'
+import iconLogoPaBravo from '../assets/PaBravoYo.png'
 
-import iconFacebook from './assets/iconFacebook.svg'
-import iconTwitter from './assets/iconsTwitter.svg'
-import iconInstagram from './assets/iconInstagram.svg'
+import iconFacebook from '../assets/iconFacebook.svg'
+import iconTwitter from '../assets/iconsTwitter.svg'
+import iconInstagram from '../assets/iconInstagram.svg'
 
 export function Footer () {
   return (
