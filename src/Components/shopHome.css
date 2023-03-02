@@ -40,7 +40,7 @@
 .data_counterContainer{
     display: flex; 
     justify-content: space-between; 
-    width: 50%;
+    width: 80%;
 }
 
 .productContainer_buyButton{
@@ -122,4 +122,10 @@ th{
 .shopingCartContainer h1{
     text-align: center;
     font-size: 1.2em;
+}
+
+button{
+    padding:5px 10px ;
+    border-radius: 15px;
+    border: none;
 }
