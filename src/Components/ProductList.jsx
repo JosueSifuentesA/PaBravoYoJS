@@ -20,14 +20,11 @@ function ProductList ({ items, recieveShopingCartData = undefined }) {
     const indexFinded = newShopingCart.findIndex(item => item.id === id)
 
     if (indexFinded !== -1) {
-      const updatedNumber = newShopingCart[indexFinded].itemCounts++
+      // const updatedNumber = newShopingCart[indexFinded].itemCounts++
 
       if (newShopingCart[indexFinded].itemCounts !== count) {
         const updatedItem = { ...newShopingCart[indexFinded], itemCounts: count }
         newShopingCart[indexFinded] = updatedItem
-      } else {
-        const newItem = { ...newShopingCart[indexFinded], itemCounts: updatedNumber }
-        newShopingCart[indexFinded] = newItem
       }
     } else {
       newShopingCart.push({ ...items[id], itemCounts: count })

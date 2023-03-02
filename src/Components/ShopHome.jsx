@@ -87,39 +87,44 @@ const ShopHome = () => {
             <img className='handler_img' onClick={() => { setShopingModule(false) }} src={iconClose} />
             <h1>Carrito de compras</h1>
 
-            <table style={{
-              border: '1px solid black',
-              borderCollapse: 'collapse'
+            <div style={{
+              display: 'flex',
+              flexFlow: 'column',
+              gap: '10px',
+              width: '100%'
             }}
             >
-              <thead>
-                <tr>
-                  <th>Nombre</th>
-                  <th>Precio</th>
-                  <th>Cantidad</th>
-                  <th>Total</th>
-                </tr>
-              </thead>
-              <tbody>
 
-                {
+              {
               Object.entries(shopingCart).map((value) => {
                 console.log(value)
                 const item = value[1]
                 return (
-                  <tr key={item.id}>
-                    <td>{item.nombre}</td>
-                    <td>{item.price}</td>
-                    <td>{item.itemCounts}</td>
-                    <td>{item.price * item.itemCounts}</td>
-                  </tr>
+                  <div
+                    style={{
+                      border: '1px solid black',
+                      backgroundColor: 'gray',
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      height: '100%',
+                      alignItems: 'center',
+                      boxSizing: 'border-box',
+                      padding: '10px',
+                      borderRadius: '10px'
+                    }} key={item.id}
+                  >
+                    <label style={{ maxWidth: '120px' }}>{item.nombre}</label>
+                    <span style={{ minWidth: '15px', textAlign: 'center' }}>{item.price}</span>
+                    <span style={{ minWidth: '15px', textAlign: 'center' }}>{item.itemCounts}</span>
+                    <span style={{ minWidth: '15px', textAlign: 'center' }}>{item.price * item.itemCounts}</span>
+                  </div>
 
                 )
               })
 
             }
-              </tbody>
-            </table>
+
+            </div>
           </div>
         </div>
 
