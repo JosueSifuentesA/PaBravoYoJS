@@ -104,10 +104,10 @@ const ShopHome = () => {
                     key={item.id}
                   >
                     <label style={{ maxWidth: '120px' }}>{item.nombre}</label>
-                    <div style={{ display: 'flex', gap: '10px' }}>
-                      <span style={{ minWidth: '15px', textAlign: 'center' }}>{item.price}</span>
+                    <div style={{ display: 'flex', gap: '5px' }}>
+                      <span style={{ minWidth: '15px', textAlign: 'center' }}>${item.price}</span>
                       <span style={{ minWidth: '15px', textAlign: 'center' }}>{item.itemCounts}</span>
-                      <span style={{ minWidth: '15px', textAlign: 'center' }}>{item.price * item.itemCounts}</span>
+                      <span style={{ minWidth: '15px', textAlign: 'center' }}>${item.price * item.itemCounts}</span>
                     </div>
                     <div style={{ padding: '5px 5px', border: 'none', borderRadius: '5px', backgroundColor: 'salmon' }}><img style={{ width: '25px' }} src={iconTrash} /></div>
                   </div>
