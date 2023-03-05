@@ -11,6 +11,7 @@ import { Footer } from './Footer'
 import ProductList from './ProductList'
 import './shopHome.css'
 import iconCart from '../assets/cart.svg'
+import iconTrash from '../assets/trash.svg'
 import iconClose from '../assets/close.svg'
 import Header from './Header'
 import { useState } from 'react'
@@ -73,6 +74,7 @@ const ShopHome = () => {
   const [shopingModule, setShopingModule] = useState(false)
   const [shopingCart, setShopingCart] = useState({})
 
+  console.log(shopingCart.length)
   const recieveShopingCartData = (data) => {
     setShopingCart(data)
   }
@@ -86,37 +88,28 @@ const ShopHome = () => {
           <div className='shopingCartContainer_handler'>
             <img className='handler_img' onClick={() => { setShopingModule(false) }} src={iconClose} />
             <h1>Carrito de compras</h1>
+            {
 
-            <div style={{
-              display: 'flex',
-              flexFlow: 'column',
-              gap: '10px',
-              width: '100%'
-            }}
-            >
+            shopingCart.length > 0 && (
+              <>
+                <div className='shopingCartContainer_itemsContainer'>
 
-              {
+                  {
               Object.entries(shopingCart).map((value) => {
                 console.log(value)
                 const item = value[1]
                 return (
                   <div
-                    style={{
-                      border: '1px solid black',
-                      backgroundColor: 'gray',
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      height: '100%',
-                      alignItems: 'center',
-                      boxSizing: 'border-box',
-                      padding: '10px',
-                      borderRadius: '10px'
-                    }} key={item.id}
+                    className='itemsContainer_itemHandler'
+                    key={item.id}
                   >
                     <label style={{ maxWidth: '120px' }}>{item.nombre}</label>
-                    <span style={{ minWidth: '15px', textAlign: 'center' }}>{item.price}</span>
-                    <span style={{ minWidth: '15px', textAlign: 'center' }}>{item.itemCounts}</span>
-                    <span style={{ minWidth: '15px', textAlign: 'center' }}>{item.price * item.itemCounts}</span>
+                    <div style={{ display: 'flex', gap: '10px' }}>
+                      <span style={{ minWidth: '15px', textAlign: 'center' }}>{item.price}</span>
+                      <span style={{ minWidth: '15px', textAlign: 'center' }}>{item.itemCounts}</span>
+                      <span style={{ minWidth: '15px', textAlign: 'center' }}>{item.price * item.itemCounts}</span>
+                    </div>
+                    <div style={{ padding: '5px 5px', border: 'none', borderRadius: '5px', backgroundColor: 'salmon' }}><img style={{ width: '25px' }} src={iconTrash} /></div>
                   </div>
 
                 )
@@ -124,7 +117,19 @@ const ShopHome = () => {
 
             }
 
-            </div>
+                </div>
+                <button>Pasar a comprar</button>
+              </>
+            )
+          }
+            {shopingCart.length === 0 && (
+              <div className='emptyCart'>
+                <div className='emptyCart_imgContainer'>
+                  <img className='imgContainer_img' src={iconCart} />
+                </div>
+                <h1 className='emptyCart_h1'>Carro vacio</h1>
+              </div>
+            )}
           </div>
         </div>
 

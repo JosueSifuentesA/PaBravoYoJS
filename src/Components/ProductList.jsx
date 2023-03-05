@@ -14,10 +14,9 @@ function ProductList ({ items, recieveShopingCartData = undefined }) {
 
   const buyItem = (count, id) => {
     const newShopingCart = [...shopingCart]
+    const indexFinded = newShopingCart.findIndex(item => item.id === id)
 
     if (count === 0) { return }
-
-    const indexFinded = newShopingCart.findIndex(item => item.id === id)
 
     if (indexFinded !== -1) {
       // const updatedNumber = newShopingCart[indexFinded].itemCounts++
